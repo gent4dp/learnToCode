@@ -1,0 +1,77 @@
+
+
+
+
+<!DOCTYPE HTML>
+    
+    
+<html>
+  <head>
+      <style>
+          
+       #obj {
+           left: 100px;
+           top: 100px;
+       }   
+          
+          
+      </style>
+      
+      
+  </head>  
+    
+    
+   <body>
+     <div id="obj">TIO RIAN</div>
+     
+     <script>
+         
+      
+      let theObj = document.getElementById("obj");
+      
+      theObj.style.position = "absolute";
+      
+      
+      let t = 0;
+      
+      
+      let l = 0;
+      
+      function move(x) {
+          if (x === "u") {
+          t += 5;
+              theObj.style.top = t.toString() + "px"
+          }else if (x === "d") {
+              t -= 5;
+              theObj.style.top = t.toString() + "px"
+          }else if (x === "r") {
+              l -= 5;
+              theObj.style.left = l.toString() + "px"
+          }else if (x === "l") {
+              l += 5;
+              theObj.style.left = l.toString() + "px"
+          }
+      }
+      
+      
+      
+         
+     </script>
+     
+     
+     <button onclick="move('u')">↓</button>
+     <button onclick="move('d')">↑</button>
+     <button onclick="move('l')">→</button>
+     <button onclick="move('r')">←</button>
+     
+     
+   
+       
+       
+       
+   </body> 
+    
+    
+</html>
+    
+
